@@ -1,20 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './component/navBar/NavBar';
-import Button from './component/button/Button';
+import Body from './component/body/Body';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <NavBar />
-        <a className='palette-link'
-            href='https://colorhunt.co/palette/ffdcb6ecc9eec9a7eb9384d1'
-        >
-        Link for app color palette    
-        </a>
+    <div className='app'>
+        <NavBar />
       <div>
-        <Button />
+        <p>like that?</p>
+        <Body />
+        <a className='palette-link'
+                href='https://colorhunt.co/palette/ffdcb6ecc9eec9a7eb9384d1'
+            >
+            Link for app color palette    
+        </a>
       </div>
     </div>
   );
