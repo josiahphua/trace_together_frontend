@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFDCB6;
+    color: #C9A7EB;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#appName {
+    position: absolute;
+    left: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo1 {
+      animation: App-logo-spin infinite 20s linear;
+      width: 10%;
+      height: auto;
+    }
+  }
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10;
+    display: inline-flex;
+    list-style-type: none;
+  }
+  
+.navbar li {
+margin-right: 1rem;
+display: inline-flex;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
