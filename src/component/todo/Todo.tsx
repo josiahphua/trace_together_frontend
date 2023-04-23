@@ -12,17 +12,17 @@ const Todo: React.FC = (props: Props) => {
     const [allTodos, setAllTodos] = useState<any>("")
 
     useEffect(() => {
-        const getTodo = async () => {
-            try {
-                const data = await axios.get(`http://localhost:8080/api/todos`, {})
-                console.log(data)
-                setAllTodos(data)
-                console.log(allTodos)
-            } catch (error) {
+        // const getTodo = async () => {
+        //     try {
+        //         const data = await axios.get(`http://localhost:8080/api/todos`, {})
+        //         console.log(data)
+        //         setAllTodos(data)
+        //         console.log(allTodos)
+        //     } catch (error) {
                 
-            }
-        }
-        getTodo()
+        //     }
+        // }
+        // getTodo()
     })
 
 
