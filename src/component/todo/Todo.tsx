@@ -35,7 +35,7 @@ const Todo: React.FC = (props: Props) => {
         const getTodo = async () => {
             try {
                 const {data} = await axios.get(`http://localhost:8080/api/todos`, {})
-                setAllTodos(data)
+                await setAllTodos(data)
             } catch (error) {
                 
             }

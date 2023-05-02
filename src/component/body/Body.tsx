@@ -2,6 +2,7 @@ import React from 'react'
 import './Body.css';
 import Calendar from '../calendar/Calendar';
 import Todo from '../todo/Todo';
+import { Route } from 'react-router-dom';
 
 type Props = {}
 
@@ -13,7 +14,9 @@ const Body: React.FC = (props: Props) => {
         <p>Currently, a calendar will be on the left.</p>
         <Calendar />
         <p>And the todo list stuffs will be on the right.</p>
-        <Todo />
+        <Route path='/todo'>
+          <Todo />
+        </Route>
     </div>
   )
 }
