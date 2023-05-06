@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../logo.svg';
 import './NavBar.css';
+import { Button } from '@mui/material';
+
 
 type Props = {}
 
@@ -17,9 +19,15 @@ const NavBar: React.FC = (props: Props, state: State) => {
       </div>
       <div>
         <ul className='navlist'>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Button href='/'>Home</Button>
+          </li>
+          <li>  
+            <Button href='/showall'>Show</Button>
+          </li>
+          <li>
+            <Button href='/calendar'>Calendar</Button>
+          </li>
         </ul>
       </div>
     </nav>

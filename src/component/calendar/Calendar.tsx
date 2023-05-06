@@ -5,7 +5,7 @@ type Props = {}
 
 const Calendar: React.FC = (props: Props) => {
   return (
-    <div className=''>
+    <div className='calendar'>
         CalendarContainer
     </div>
   )

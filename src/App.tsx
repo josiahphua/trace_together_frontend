@@ -16,9 +16,9 @@ const App: React.FC = () => {
 
       <body>
         <p>like that?</p>
-        <Body />
         <BrowserRouter>
           <Routes>
+            <Route path='/showall' element={<Body />}/>
             <Route path='/calendar' element={<Calendar />} />
             <Route path='/todo' element={<Todo />} />
           </Routes>
